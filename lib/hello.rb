@@ -4,6 +4,7 @@ def hello_t(arr)
   yield arr[n]
     n+=1
   end
+  arr
 end
 
 # call your method here!
