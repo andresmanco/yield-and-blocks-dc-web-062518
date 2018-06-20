@@ -1,10 +1,14 @@
 def hello_t(arr)
-  n=0
-  while n < arr.size
-  yield arr[n]
-    n+=1
+  if block_given?
+    n=0
+    while n < arr.size
+    yield arr[n]
+      n+=1
+    end
+    arr
+  else
+    puts 'HEY! No block was given'
   end
-  arr
 end
 
 # call your method here!
